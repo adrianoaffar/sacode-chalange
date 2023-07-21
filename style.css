@@ -1,0 +1,44 @@
+.ano{
+    background-image: url(images/pemandangan.png);
+    background-position:center;
+    background-size: cover;
+    image-rendering: auto;
+    background-repeat: no-repeat;
+    
+}
+.display{
+    font-size: 70px;
+    font-family: 'poppins';
+    color: #333;
+    opacity: 0; /*Add opasitas awal 0 */
+    animation: fadeInText 1s ease-in-out forwards; /*animasi fadeInText dengan durasi 1 detik */
+
+}
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px); /* Efek pindah teks ke atas saat masuk */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Kembali ke posisi awal teks */
+    }
+}
+.fw-bold,
+.text-box,
+.button{
+    opacity: 0; /* Add opasitas awal menjadi 0 */
+    animation: fadeInElement 1s ease-in-out forwards; /* Add animasi fadeInElement dengan durasi 1 detik */
+}
+
+/* Keyframes untuk animasi fadeInElement */
+@keyframes fadeInElement {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px); /* Efek pindah elemen ke atas saat masuk */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Kembali ke posisi awal elemen */
+    }
+}
